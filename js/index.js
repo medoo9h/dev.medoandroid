@@ -51,7 +51,7 @@ document.getElementById('telegram').addEventListener('click', () => {
 });
 
 document.getElementById('instagram').addEventListener('click', () => {
-    window.open('https://www.instagram.com/devmedoandroid?igsh=MTBjaTR5YTFicnpmYQ==', '_blank');
+    window.open('https://www.instagram.com/devmedoandroid', '_blank');
     animateButton('instagram');
 });
 
