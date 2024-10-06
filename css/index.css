@@ -1,0 +1,105 @@
+/* تنسيق الجسم */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* خلفية الصورة */
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* استخدام كامل ارتفاع الشاشة */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تجعل الصورة تتناسب مع عرض الشاشة */
+    filter: brightness(0.4); /* تقليل سطوع الصورة */
+}
+
+/* تأثير الزجاج */
+.overlay {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2); /* خلفية شفافة */
+    backdrop-filter: blur(5px); /* طمس الخلفية */
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+    display: flex; /* تفعيل نظام الفليكس */
+    flex-direction: column; /* تنظيم العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر في المنتصف أفقيًا */
+    justify-content: center; /* محاذاة العناصر في المنتصف عموديًا */
+    height: 100%; /* اجعل الحاوية تأخذ كامل ارتفاعها */
+}
+
+/* تنسيق الصورة الشخصية */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%; /* جعل الصورة دائرية */
+}
+
+/* تنسيق التبويبات */
+.nav-tabs {
+    border: none; /* إزالة الحدود */
+    margin-bottom: 20px; /* مسافة بين التبويبات والمحتوى */
+}
+
+.nav-link {
+    border-radius: 25px; /* انحناء المدور */
+    background: rgba(255, 255, 255, 0.3); /* خلفية شفافة */
+    color: #fff; /* لون النص */
+    transition: background 0.3s, transform 0.2s; /* إضافة تأثير التحويل */
+    margin: 0 10px; /* مسافة بين التبويبات */
+
+}
+
+.nav-link.active {
+    background: rgba(33, 206, 105, 0.6); /* خلفية أكثر وضوحًا للتبويب النشط */
+    transform: scale(1.05); /* تأثير الضغط على التبويب النشط */
+}
+
+/* تنسيق الأزرار */
+.long-btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    transition: background 0.3s, transform 0.3s;
+    width: 100%; /* جعل الأزرار تطابق عرض الحاوية */
+    height: 50px; /* زيادة ارتفاع الأزرار */
+    border-radius: 25px; /* انحناء المدور للأزرار */
+    border:gray 1px solid;
+}
+
+.long-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* تنسيق الهاشتاج */
+.hashtag {
+    color: #3f8d2f; /* اللون المميز للهاشتاج الفلسطيني */
+    font-weight: bold; /* جعل الهاشتاج بخط عريض */
+}
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #7aac70;
+    --bs-nav-link-hover-color: #7aac70;
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
